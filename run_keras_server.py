@@ -1,4 +1,4 @@
-# USAGE
+﻿# USAGE
 # Start the server:
 # 	python run_keras_server.py
 # Submit a request via cURL:
@@ -87,4 +87,4 @@ if __name__ == "__main__":
 		"please wait until server has fully started"))
 	model = load_model('5type4cbirMODEL.h5')
 	model._make_predict_function() 
-	app.run()
+	app.run('0.0.0.0',port=5000)
